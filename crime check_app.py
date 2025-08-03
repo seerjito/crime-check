@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Go'aami Dambiile", layout="centered")
 
-st.title("🔍 Kala Saar Qofka Dambiilaha ah")
+st.title("🔍 Kala Saar Qofka Dambiilaha ah iyo qofka aan danbiga lehen")
 
 # --- Inputs ---
 name = st.text_input("Magaca:")
