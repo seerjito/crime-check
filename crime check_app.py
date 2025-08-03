@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Go'aami Dambiile", layout="centered")
 
-st.title("🔍 Kala Saar Qofka Dambiilaha ah iyo qofka aan danbiga lehen")
+st.title("🔍 Kala Saar Qofka Dambiilaha ah iyo midka aan ehen")
 
 # --- Inputs ---
 name = st.text_input("Magaca:")
@@ -18,7 +18,7 @@ def check_criminal_status(name, age, crime_type, score):
     except ValueError:
         return "❌ Fadlan geli da'da iyo dhibcaha si sax ah."
 
-    if score >= 7 or crime_type.lower() in ["tuugo", "dil", "burcadnimo"]:
+    if score >= 7 or crime_type.lower() in ["tuugo", "dil", "burcadnimo","kufsi",]:
         return f"🚨 {name} waa dambile!"
     else:
         return f"✅ {name} ma leh wax danbi ah."
